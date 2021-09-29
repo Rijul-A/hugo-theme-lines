@@ -5,12 +5,7 @@
     <description>{{ .Site.Params.description }}</description>
     <link>{{ .Site.BaseURL }}</link>
     <!-- Optional channel elements -->
-    <language>en</language>
-    <copyright>CC0</copyright>
-    <lastBuildDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</lastBuildDate>
-    <generator>Hugo - gohugo.io</generator>
-    <docs>http://cyber.harvard.edu/rss/rss.html</docs>
-    <!-- <atom:link href="{# .Site.baseURL #}" rel="self" type="application/atom+xml"/> -->
+    <atom:link href="{{ .Site.BaseURL }}" rel="self" type="application/atom+xml"/>
     {{ range where .Site.RegularPages "Section" "posts" }}
     <item>
       <title>{{ .Title }}</title>

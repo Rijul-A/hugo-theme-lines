@@ -67,8 +67,8 @@ minify = true
 
 [menu]
   [[menu.main]]
-    identifier = "index"
-    name       = "Index"
+    identifier = "posts"
+    name       = "Posts"
     url        = "/"
     weight     = -111
 
